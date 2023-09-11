@@ -4,7 +4,7 @@
     <title>Peace's Portfolio</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./styles.css">
-  <script src="./index.js"></script>
+    <script src="./index.js"></script>
   </head>
 
   <body>
@@ -16,15 +16,15 @@
     <section>
       <div class="center">
         <div class="text-container">
-          <h1><b>Peace Ben</b></h1>
-          <p>Front-end Track</p>
-          <div class="date"></div>
-          <div class=""></div>
-          <a href="https://github.com/PeaceOffiong">Github Profile</a>
+          <h1 data-testid="slackUserName"><b>Peace Ben</b></h1>
+          <p  data-testid="myTrack">Front-end Track</p>
+          <div id="time" data-testid="currentUTCTime"></div>
+          <div id="day"  data-testid="currentDayOfTheWeek"></div>
+          <a href="https://github.com/PeaceOffiong" data-testid="githubURL">Github Profile</a>
         </div>
         <div class="img-container">
           <div class="img-cubicle">
-            <img src="https://res.cloudinary.com/du8oaagwi/image/upload/v1694177716/CNEM4759_i9apde.jpg" alt="peace" class="img">
+            <img  data-testid="slackDisplayImage" src="https://res.cloudinary.com/du8oaagwi/image/upload/v1694177716/CNEM4759_i9apde.jpg" alt="peace" class="img">
             <div class="frame"></div>
             <div class="square-design">
               <div class="inside">
