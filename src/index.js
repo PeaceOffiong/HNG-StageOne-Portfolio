@@ -1,18 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const timeStamp = document.getElementById("date")
-    const date = document.getElementById("time");
+    const timeStamp = document.getElementById("time")
+    const day = document.getElementById("day");
 
     const getTime = () => {
-        const currentTime = new Date();
+        const date = new Date()
+        const index = date.getDay();
+        const milliseconds = date.getTime();
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const NameofDay = daysOfWeek[index];
 
-        const splits = {
-            hour: 'numeric',
-            minute: 'numeric',
-            second: 'numeric',
-            hour12: true,
-        };
-        timeStamp.innerHTML = currentTime.toLocaleTimeString(undefined, splits);
-        date.innerHTML = currentTime.toDateString();
+        timeStamp.innerHTML = milliseconds;
+        day.innerHTML = NameofDay;
+
     }
 
     getTime();
